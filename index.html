@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content=“EN?“>
+    <meta name="keywords" content="LEAD GENERATION, LEADGEN, GENERATION, LEAD,CLIENTS, SERVICE FOR CLIENTS">
+    <meta name="owner" content="LEADCRAFT, CRAFT, CRAFTERS, LEADCRAFTERS, LEAD CRAFTERS">
+    <title>LeadCrafters</title>
+
+    <link rel="icon" type="image/x-icon" href="src/images/icon.png">
+
+    <link rel="stylesheet" href="base.css">
+
+    <script src="src/js/carousel.js"></script>
+    <script src="src/js/nav.js"></script>
+    <script src="src/js/audit.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        window.addEventListener("load", function () {
+            let loaderContainer = document.querySelector(".loader__container");
+            let loader = document.querySelector(".loader");
+
+            loaderContainer.style.top = `${window.scrollY}px`;
+
+            setTimeout(() => {
+                loaderContainer.style.opacity = "0";
+                loader.style.opacity = "0";
+
+                document.querySelector("body").style.overflowY = "auto";
+            }, 2000);
+
+            setTimeout(() => {
+                loaderContainer.remove();
+                loader.remove();
+            }, 2500);
+        });
+    </script>
+</head>
+<body>
+
+<header>
+    <img src="src/images/logo-wide-green.png" alt="LeadCrafters" class="header__logo" id="logo-green">
+    <img src="src/images/logo-wide-white.png" alt="LeadCrafters" class="header__logo" id="logo-white">
+</header>
+
+<div class="loader__container">
+    <div class="loader__wrapper">
+        <div class="loader"></div>
+    </div>
+</div>
+
+
+<div class="connect__container">
+    <span class="connect__caption">
+        Perfected Approach. <br> Qualified staff. <br> Increased earnings for your company.
+    </span>
+
+    <div class="connect__button" onclick="window.open('https://lead_crafter.t.me', '__blank')">
+        ORDER FREE CONSULTATION <i class="fa-solid fa-handshake"></i>
+    </div>
+
+    <div class="mouse"></div>
+</div>
+
+
+<div class="why-we-unique__container">
+    <span class="section__title">What makes us unique?</span>
+
+    <div class="why-we-unique__content">
+        <div class="why-we-unique__content-item">
+            <i class="fa-solid fa-sack-dollar"></i>
+
+            <span>
+                The best prices on the market for single listings or package-listings.
+            </span>
+        </div>
+        <div class="why-we-unique__content-item-line"></div>
+
+        <div class="why-we-unique__content-item">
+            <i class="fa-solid fa-circle-exclamation"></i>
+
+            <span>
+                Avoid the risk of delays and increase speed of approval processes.
+            </span>
+        </div>
+        <div class="why-we-unique__content-item-line"></div>
+        <div class="why-we-unique__content-item">
+            <i class="fa-solid fa-users-line"></i>
+
+            <span>
+                Maximize the number of potential investors.
+            </span>
+        </div>
+        <div class="why-we-unique__content-item-line"></div>
+        <div class="why-we-unique__content-item">
+            <i class="fa-solid fa-chart-line"></i>
+
+            <span>
+                Creating hype around your coin.
+            </span>
+        </div>
+    </div>
+</div>
+
+
+<div class="about-us__container">
+    <span class="section__title">What we can provide</span>
+
+    <div class="about-us__content">
+        <div class="about-us__content-item">
+            <i class="fa-solid fa-maximize"></i>
+
+            <h4>Listing, IEO</h4>
+
+            <span>
+                This service is aimed at attracting new investors and expanding the base of project owners.
+                We will find the perfect option for your project according to its goals and budget.
+            </span>
+        </div>
+        <div class="about-us__content-item">
+            <i class="fa-solid fa-arrow-up-right-dots"></i>
+
+            <h4>Package listing</h4>
+
+            <span>
+                We have the ability to list your project on quality exchanges, which will provide a rapid increase
+                in liquidity, increase the number of holders and expand the community of the project.
+            </span>
+        </div>
+        <div class="about-us__content-item">
+            <i class="fa-solid fa-store"></i>
+
+            <h4>Market making</h4>
+
+            <span>
+                Market Making contributes to the success and sustainable development of financial market projects
+                by providing liquidity, stimulating trading activity and providing strategic support.
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="audit__container">
+    <div class="audit__container-block" id="audit__block-selection">
+        <button class="audit__button" id="audit__selection-audit" onclick="change(this)">Audit</button>
+        <button class="audit__button" id="audit__selection-legal" onclick="change(this)">Legal</button>
+    </div>
+
+    <div class="vertical-line"></div>
+
+    <div id="audit__block-content"></div>
+</div>
+
+<div class="referral__container">
+    <span class="section__title-left">
+        Working with the referral program of exchanges
+    </span>
+
+    <div class="referral__container-content">
+        <div class="referral__content-item">
+            <i class="fa-regular fa-circle-dot dot"></i>
+            <span>
+                Through the collaboration with media personalities, our team excels in attracting
+                new users to your exchange in an efficient manner.
+            </span>
+        </div>
+
+        <div class="referral__content-item">
+            <i class="fa-regular fa-circle-dot dot"></i>
+            <span>
+                We prioritize the preservation of your reputation and taking responsibility for our work.
+            </span>
+        </div>
+
+        <div class="referral__content-item">
+            <i class="fa-regular fa-circle-dot dot"></i>
+            <span>
+                You can expect timely and impressive results that effectively
+                showcase the outstanding features of your platform.
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="services__container">
+    <div class="horizontal-line"></div>
+
+    <span class="section__title">
+        We take pleasure in offering lead generation services to boost your business prospects
+    </span>
+
+    <div class="services__container-content">
+        <i class="fa-solid fa-arrows-to-dot"></i> <span>Our Services</span>
+    </div>
+
+    <div class="services__container-content">
+        <i class="fa-solid fa-arrows-to-dot"></i>
+        <span>A focused group consisting of skilled professionals</span>
+    </div>
+
+    <div class="services__container-content">
+        <i class="fa-solid fa-arrows-to-dot"></i>
+        <span>Carefully selected leads that have been hand-curated</span>
+    </div>
+
+    <div class="services__container-content">
+        <i class="fa-solid fa-arrows-to-dot"></i>
+        <span>Live reporting</span>
+    </div>
+
+    <div class="services__container-content">
+        <i class="fa-solid fa-arrows-to-dot"></i>
+        <span>Creating and managing email campaigns to effectively reach the target audience</span>
+    </div>
+
+    <div class="services__container-content">
+        <i class="fa-solid fa-arrows-to-dot"></i>
+        <span>CRM Integration</span>
+    </div>
+
+    <div class="services__container-content">
+        <i class="fa-solid fa-arrows-to-dot"></i>
+        <span>Inbox management</span>
+    </div>
+
+    <div class="services__container-content">
+        <i class="fa-solid fa-arrows-to-dot"></i>
+        <span>Booking meetings on your calendar with warm leads that align perfectly with your target prospects</span>
+    </div>
+</div>
+
+<div class="swiper sample-slider">
+    <div class="swiper-wrapper"></div>
+</div>
+
+<footer>
+    <div class="footer__container-content">
+        <a href="mailto:team@leadcrafters.pro" class="footer__container-content-email">
+            <span><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;team@leadcrafters.pro</span>
+        </a>
+
+        <h1>Stand out from the competition with Lead Crafters</h1>
+
+        <div class="footer__container-content-socials">
+            <a href="https://lead_crafter.t.me" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>
