@@ -827,7 +827,7 @@ header {
 }
 
 .audit__block-content__small {
-    height: 100px;
+    height: 225px;
 }
 
 @media screen and (max-width: 1450px) {
