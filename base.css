@@ -928,7 +928,7 @@ header {
 
 @media screen and (max-width: 750px) {
     .audit__container {
-        height: 500px;
+        height: 1400px;
     }
 
     #audit__block-selection {
@@ -957,11 +957,11 @@ header {
     }
 
     .audit__block-content__large {
-        height: 315px;
+        height: 1300px;
     }
 
     .audit__block-content__small {
-        height: 220px;
+        height: 350px;
     }
 }
 
