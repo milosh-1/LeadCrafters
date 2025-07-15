@@ -854,7 +854,7 @@ header {
 
 @media screen and (max-width: 1150px) {
     .audit__container {
-        height: 875px;
+        height: 900px;
     }
 
     #audit__block-selection {
@@ -866,7 +866,7 @@ header {
     }
 
     #audit__block-content {
-        width: 575px;
+        width: 440px;
     }
 
     .audit__button {
@@ -879,7 +879,7 @@ header {
     }
 
     .audit__block-content__large {
-        height: 800px;
+        height: 850px;
     }
 
     .audit__block-content__small {
@@ -889,12 +889,12 @@ header {
 
 @media screen and (max-width: 950px) {
     .audit__container {
-        height: 500px;
+        height: 1200px;
     }
 
     #audit__block-selection {
         width: 300px;
-        height: 160px;
+        height: 375px;
 
         top: 52%;
         transform: translateY(-52%);
@@ -918,11 +918,11 @@ header {
     }
 
     .audit__block-content__large {
-        height: 280px;
+        height: 1125px;
     }
 
     .audit__block-content__small {
-        height: 150px;
+        height: 325px;
     }
 }
 
