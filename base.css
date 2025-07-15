@@ -671,7 +671,7 @@ header {
 
     .about-us__content-item h4 {
         font-size: 18px;
-        width: 150px;
+        width: 120px;
         top: 60px;
     }
 
@@ -708,7 +708,7 @@ header {
 
     .about-us__content-item span {
         font-size: 10px;
-        width: 180px;
+        width: 140px;
         top: 130px;
     }
 }
@@ -879,7 +879,7 @@ header {
     }
 
     .audit__block-content__large {
-        height: 850px;
+        height: 870px;
     }
 
     .audit__block-content__small {
@@ -967,7 +967,7 @@ header {
 
 @media screen and (max-width: 650px) {
     .audit__container {
-        height: 850px;
+        height: auto;
 
         display: block;
     }
@@ -977,18 +977,18 @@ header {
     }
 
     #audit__block-content {
-        height: 350px;
-        top: 20px;
+        height: 1275px;
+        top: -425px;
 
-        left: 50%;
+        left: 40%;
         transform: translateX(-50%);
     }
 
     #audit__block-selection {
         width: 265px;
 
-        top: 500px;
-        left: 50%;
+        top: 1300px;
+        left: 40%;
         transform: translateX(-50%);
     }
 }
