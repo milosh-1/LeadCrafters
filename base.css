@@ -1641,3 +1641,39 @@ footer {
         transform: translateX(50%);
     }
 }
+@media screen and (max-width: 600px) {
+  .about-us__content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    height: auto;
+  }
+
+  .about-us__content-item {
+    width: 45%;
+    min-width: 140px;
+    height: auto;
+  }
+
+  .about-us__container {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .about-us__content-item h4,
+  .about-us__content-item span {
+    position: static;
+    transform: none;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .about-us__content-item i {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+    font-size: 28px;
+    text-align: center;
+  }
+}
+
