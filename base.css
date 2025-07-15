@@ -767,10 +767,10 @@ header {
     border-radius: 15px;
 
     width: 2px;
-    height: 370px;
+    height: 65%;
 
     position: relative;
-    top: 50%;
+    top: 56%;
     transform: translateY(-50%);
 }
 
