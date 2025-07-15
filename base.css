@@ -672,7 +672,7 @@ header {
     .about-us__content-item h4 {
         font-size: 18px;
         width: 150px;
-        top: 75px;
+        top: 60px;
     }
 
     .about-us__content-item span {
@@ -703,7 +703,7 @@ header {
 
     .about-us__content-item h4 {
         font-size: 18px;
-        top: 75px;
+        top: 60px;
     }
 
     .about-us__content-item span {
@@ -725,7 +725,7 @@ header {
 
     .about-us__content-item {
         width: 120px;
-        height: 320px;
+        height: 375px;
         top: 15px;
     }
 
