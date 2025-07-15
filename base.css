@@ -1758,3 +1758,21 @@ footer {
     position: static;
   }
 }
+@media screen and (max-width: 650px) {
+  #audit__block-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 0;
+    font-size: 14px;
+    top: auto;
+    transform: none;
+    position: static;
+    overflow: visible; /* 👈 позволяет контенту расширяться */
+    height: auto;       /* 👈 авто-высота под контент */
+  }
+
+  .audit__block-content__large,
+  .audit__block-content__small {
+    height: auto !important;  /* 👈 принудительно отменяем фикс высоту */
+  }
+}
