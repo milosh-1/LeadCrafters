@@ -31,7 +31,7 @@ function change(block) {
     switch (block.id) {
         case "audit__selection-audit":
             contentField.innerHTML = auditText;
-            contentField.className = "audit__block-content audit__block-content__large";
+            contentField.className = "audit__block-content audit__block-content__small";
             break;
         case "audit__selection-legal":
             contentField.innerHTML = legalText;
@@ -39,7 +39,7 @@ function change(block) {
             break;
         case "audit__selection-marketing":
             contentField.innerHTML = marketingText;
-            contentField.className = "audit__block-content audit__block-content__small";
+            contentField.className = "audit__block-content audit__block-content__large";
             break;
         case "audit__selection-traffic":
             contentField.innerHTML = trafficText;
