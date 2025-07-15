@@ -1776,3 +1776,55 @@ footer {
     height: auto !important;  /* 👈 принудительно отменяем фикс высоту */
   }
 }
+@media screen and (max-width: 650px) {
+  .audit__container {
+    display: block;
+    height: auto;
+    overflow: visible;
+    padding: 30px 15px;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  #audit__block-selection {
+    width: 100%;
+    margin: 0 auto;
+    position: static;
+    top: auto;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .audit__button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    height: auto;
+  }
+
+  #audit__block-content {
+    position: static;
+    width: 100%;
+    height: auto !important;
+    overflow: visible !important;
+    top: auto;
+    transform: none;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+
+  .audit__block-content__large,
+  .audit__block-content__small {
+    height: auto !important;
+  }
+
+  html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto !important;
+  }
+}
