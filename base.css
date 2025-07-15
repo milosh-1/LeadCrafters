@@ -854,19 +854,19 @@ header {
 
 @media screen and (max-width: 1150px) {
     .audit__container {
-        height: 1000px;
+        height: 875px;
     }
 
     #audit__block-selection {
         width: 400px;
-        height: 160px;
+        height: 650px;
 
         top: 52%;
         transform: translateY(-52%);
     }
 
     #audit__block-content {
-        width: 650px;
+        width: 575px;
     }
 
     .audit__button {
@@ -879,7 +879,7 @@ header {
     }
 
     .audit__block-content__large {
-        height: 950px;
+        height: 800px;
     }
 
     .audit__block-content__small {
