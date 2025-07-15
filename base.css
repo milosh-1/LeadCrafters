@@ -1717,3 +1717,44 @@ footer {
     line-height: 1.4;
   }
 }
+@media screen and (max-width: 650px) {
+  .audit__container {
+    display: block;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  #audit__block-selection {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    top: auto;
+    left: auto;
+    transform: none;
+    position: static;
+  }
+
+  .audit__button {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  #audit__block-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 0;
+    font-size: 14px;
+    top: auto;
+    transform: none;
+    position: static;
+  }
+}
