@@ -750,7 +750,7 @@ header {
     background-color: #262E1F;
 
     width: 100%;
-    height: 750px;
+    height: 550px;
 
     position: relative;
     left: 0;
@@ -766,7 +766,7 @@ header {
     border-radius: 15px;
 
     width: 2px;
-    height: 65%;
+    height: 370px;
 
     position: relative;
     top: 56%;
@@ -775,7 +775,7 @@ header {
 
 #audit__block-selection {
     width: 650px;
-    height: 550px;
+    height: 270px;
 
     position: relative;
 
