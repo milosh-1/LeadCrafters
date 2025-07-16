@@ -766,10 +766,10 @@ header {
     border-radius: 15px;
 
     width: 2px;
-    height: 370px;
+    height: 70%;
 
     position: relative;
-    top: 56%;
+    top: 50%;
     transform: translateY(-50%);
 }
 
