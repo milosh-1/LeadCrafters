@@ -965,7 +965,14 @@ header {
     }
 }
 
-.vertical-line {
+@media screen and (max-width: 650px) {
+    .audit__container {
+        height: 1650px;
+
+        display: block;
+    }
+
+    .vertical-line {
         display: none;
     }
 
@@ -1710,7 +1717,14 @@ footer {
     line-height: 1.4;
   }
 }
-.vertical-line {
+@media screen and (max-width: 650px) {
+  .audit__container {
+    display: block;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .vertical-line {
     display: none;
   }
 
@@ -1744,12 +1758,33 @@ footer {
     position: static;
   }
 }
-.audit__block-content__large,
+@media screen and (max-width: 650px) {
+  #audit__block-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 0;
+    font-size: 14px;
+    top: auto;
+    transform: none;
+    position: static;
+    overflow: visible; /* 👈 позволяет контенту расширяться */
+    height: auto;       /* 👈 авто-высота под контент */
+  }
+
+  .audit__block-content__large,
   .audit__block-content__small {
     height: auto !important;  /* 👈 принудительно отменяем фикс высоту */
   }
 }
-.vertical-line {
+@media screen and (max-width: 650px) {
+  .audit__container {
+    display: block;
+    height: auto;
+    overflow: visible;
+    padding: 30px 15px;
+  }
+
+  .vertical-line {
     display: none;
   }
 
@@ -1790,101 +1825,6 @@ footer {
   html, body {
     overflow-x: hidden;
     overflow-y: auto;
-    height: auto !important;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .audit__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 10px;
-    height: auto;
-  }
-
-  .vertical-line {
-    display: none;
-  }
-
-  #audit__block-selection,
-  #audit__block-content {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    position: static;
-    transform: none;
-  }
-
-  .audit__button {
-    width: 100%;
-    height: auto;
-    font-size: 14px;
-    padding: 10px;
-    margin-top: 10px;
-  }
-
-  #audit__block-content {
-    font-size: 14px;
-    overflow: visible;
-    height: auto !important;
-  }
-
-  .audit__block-content__large,
-  .audit__block-content__small {
-    height: auto !important;
-  }
-
-  html, body {
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: auto !important;
-  }
-}
-
-@media screen and (min-width: 651px) {
-  .audit__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
-    padding: 40px 20px;
-    height: auto;
-  }
-
-  #audit__block-selection {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-  }
-
-  .audit__button {
-    width: 100%;
-    height: auto;
-    font-size: 16px;
-    padding: 12px;
-    margin-top: 10px;
-  }
-
-  .vertical-line {
-    display: block;
-    width: 2px;
-    height: auto;
-    background-color: #EFF7EA;
-  }
-
-  #audit__block-content {
-    width: 100%;
-    max-width: 500px;
-    font-size: 15px;
-    height: auto !important;
-    overflow: visible;
-  }
-
-  .audit__block-content__large,
-  .audit__block-content__small {
     height: auto !important;
   }
 }
