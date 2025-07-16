@@ -1828,6 +1828,9 @@ footer {
     height: auto !important;
   }
 }
+
+
+/* === Desktop (≥1151px) Fixes for .audit__container and .referral__container === */
 @media screen and (min-width: 1151px) {
   .audit__container {
     padding: 80px 40px;
@@ -1881,4 +1884,3 @@ footer {
     line-height: 1.5;
   }
 }
-
