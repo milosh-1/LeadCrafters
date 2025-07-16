@@ -1800,22 +1800,18 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 30px 15px;
+    padding: 20px 10px;
     height: auto;
   }
 
   .vertical-line {
-    width: 2px;
-    height: 50px;
-    background-color: #EFF7EA;
-    display: block;
-    margin: 0 auto;
+    display: none;
   }
 
   #audit__block-selection,
   #audit__block-content {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
     position: static;
     transform: none;
@@ -1824,14 +1820,14 @@ footer {
   .audit__button {
     width: 100%;
     height: auto;
-    padding: 15px;
-    font-size: 16px;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 10px;
   }
 
   #audit__block-content {
     font-size: 14px;
-    padding: 0 10px;
-    overflow: visible !important;
+    overflow: visible;
     height: auto !important;
   }
 
@@ -1843,6 +1839,52 @@ footer {
   html, body {
     overflow-x: hidden;
     overflow-y: auto;
+    height: auto !important;
+  }
+}
+
+@media screen and (min-width: 651px) {
+  .audit__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  #audit__block-selection {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .audit__button {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    padding: 12px;
+    margin-top: 10px;
+  }
+
+  .vertical-line {
+    display: block;
+    width: 2px;
+    height: auto;
+    background-color: #EFF7EA;
+  }
+
+  #audit__block-content {
+    width: 100%;
+    max-width: 500px;
+    font-size: 15px;
+    height: auto !important;
+    overflow: visible;
+  }
+
+  .audit__block-content__large,
+  .audit__block-content__small {
     height: auto !important;
   }
 }
