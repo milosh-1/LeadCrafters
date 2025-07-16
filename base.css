@@ -1828,3 +1828,57 @@ footer {
     height: auto !important;
   }
 }
+@media screen and (min-width: 1151px) {
+  .audit__container {
+    padding: 80px 40px;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  #audit__block-selection,
+  #audit__block-content {
+    top: auto;
+    transform: none;
+    position: static;
+  }
+
+  .audit__button {
+    height: auto;
+    padding: 20px 30px;
+    font-size: 20px;
+  }
+
+  #audit__block-content {
+    font-size: 16px;
+    padding: 20px 0;
+    height: auto;
+    overflow: visible;
+  }
+
+  .audit__block-content__large,
+  .audit__block-content__small {
+    height: auto !important;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .referral__container {
+    padding: 80px 40px;
+    height: auto;
+    align-items: center;
+  }
+
+  .referral__container-content {
+    height: auto;
+  }
+
+  .referral__content-item {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .referral__content-item span {
+    line-height: 1.5;
+  }
+}
+
