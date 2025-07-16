@@ -1799,41 +1799,40 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
     padding: 30px 15px;
-    gap: 30px;
     height: auto;
   }
 
   .vertical-line {
-    display: none;
+    width: 2px;
+    height: 50px;
+    background-color: #EFF7EA;
+    display: block;
+    margin: 0 auto;
   }
 
-  #audit__block-selection {
+  #audit__block-selection,
+  #audit__block-content {
     width: 100%;
     max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    margin: 0 auto;
     position: static;
     transform: none;
   }
 
   .audit__button {
     width: 100%;
+    height: auto;
     padding: 15px;
     font-size: 16px;
-    height: auto;
   }
 
   #audit__block-content {
-    width: 100%;
-    max-width: 500px;
     font-size: 14px;
     padding: 0 10px;
-    position: static;
-    transform: none;
-    height: auto !important;
     overflow: visible !important;
+    height: auto !important;
   }
 
   .audit__block-content__large,
