@@ -746,129 +746,10 @@ header {
     }
 }
 
-.audit__container {
-    background-color: #262E1F;
-
-    width: 100%;
-    height: 800px;
-
-    position: relative;
-    left: 0;
-
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    gap: 50px;
-}
-
-.vertical-line {
-    background-color: #EFF7EA;
-    border-radius: 15px;
-
-    width: 2px;
-    height: 70%;
-
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#audit__block-selection {
-    width: 650px;
-    height: 650px;
-
-    position: relative;
-
-    top: 48%;
-    transform: translateY(-48%);
-}
-
-.audit__button {
-    color: #262E1F;
-    font-size: 25px;
-    font-weight: 500;
-    outline: none;
-
-    background-color: #EFF7EA;
-    border: none;
-    border-radius: 12px;
-
-    width: 500px;
-    height: 100px;
-
-    position: relative;
-    margin-top: 25px;
-
-    left: 100%;
-    transform: translateX(-100%);
-
-    cursor: pointer;
-}
-
-#audit__block-content {
-    color: #EFF7EA;
-    font-size: 16px;
-    font-weight: 300;
-    word-break: break-word;
-    text-align: left;
-
-    position: relative;
-
-    width: 650px;
-
-    overflow: hidden;
-
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.audit__block-content__large {
-    height: 725px;
-}
-
-.audit__block-content__small {
-    height: 225px;
-}
-
 @media screen and (max-width: 1450px) {
-    .audit__container {
-        height: 900px;
     }
-
-    #audit__block-selection {
-        width: 500px;
-    }
-
-    #audit__block-content {
-        width: 500px;
-    }
-
-    .audit__block-content__large {
-        height: 800px;
-    }
-
-    .audit__block-content__small {
-        height: 280px;
-    }
-}
 
 @media screen and (max-width: 1150px) {
-    .audit__container {
-        height: 900px;
-    }
-
-    #audit__block-selection {
-        width: 400px;
-        height: 650px;
-
-        top: 52%;
-        transform: translateY(-52%);
-    }
-
-    #audit__block-content {
-        width: 440px;
-    }
-
     .audit__button {
         width: 100%;
         height: 80px;
@@ -888,24 +769,6 @@ header {
 }
 
 @media screen and (max-width: 950px) {
-    .audit__container {
-        height: 1200px;
-    }
-
-    #audit__block-selection {
-        width: 300px;
-        height: 375px;
-
-        top: 52%;
-        transform: translateY(-52%);
-    }
-
-    #audit__block-content {
-        width: 300px;
-
-        font-size: 16px;
-    }
-
     .audit__button {
         width: 100%;
         height: 80px;
@@ -927,24 +790,6 @@ header {
 }
 
 @media screen and (max-width: 750px) {
-    .audit__container {
-        height: 1400px;
-    }
-
-    #audit__block-selection {
-        width: 250px;
-        height: 350px;
-
-        top: 52%;
-        transform: translateY(-52%);
-    }
-
-    #audit__block-content {
-        width: 250px;
-
-        font-size: 16px;
-    }
-
     .audit__button {
         width: 100%;
         height: 60px;
@@ -965,32 +810,6 @@ header {
     }
 }
 
-@media screen and (max-width: 650px) {
-    .audit__container {
-        height: 1650px;
-
-        display: block;
-    }
-
-    .vertical-line {
-        display: none;
-    }
-
-    #audit__block-content {
-        height: 1275px;
-        top: -320px;
-
-        left: 40%;
-        transform: translateX(-50%);
-    }
-
-    #audit__block-selection {
-        width: 265px;
-
-        top: 1300px;
-        left: 40%;
-        transform: translateX(-50%);
-    }
 }
 
 .referral__container {
@@ -1717,114 +1536,88 @@ footer {
     line-height: 1.4;
   }
 }
-@media screen and (max-width: 650px) {
-  .audit__container {
-    display: block;
-    height: auto;
-    padding: 30px 20px;
-  }
-
-  .vertical-line {
-    display: none;
-  }
-
-  #audit__block-selection {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    top: auto;
-    left: auto;
-    transform: none;
-    position: static;
-  }
-
-  .audit__button {
-    width: 100%;
-    height: auto;
-    padding: 15px;
-    font-size: 16px;
-  }
-
-  #audit__block-content {
-    width: 100%;
-    max-width: 100%;
-    padding: 20px 0;
-    font-size: 14px;
-    top: auto;
-    transform: none;
-    position: static;
-  }
-}
-@media screen and (max-width: 650px) {
-  #audit__block-content {
-    width: 100%;
-    max-width: 100%;
-    padding: 20px 0;
-    font-size: 14px;
-    top: auto;
-    transform: none;
-    position: static;
-    overflow: visible; /* 👈 позволяет контенту расширяться */
-    height: auto;       /* 👈 авто-высота под контент */
-  }
-
-  .audit__block-content__large,
+.audit__block-content__large,
   .audit__block-content__small {
     height: auto !important;  /* 👈 принудительно отменяем фикс высоту */
   }
 }
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto !important;
+  }
+}
+
+/* ====== БАЗОВАЯ СТРУКТУРА (по умолчанию — больше 650px) ====== */
+.audit__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 20px;
+  background-color: #262E1F;
+  flex-wrap: nowrap;
+}
+
+#audit__block-selection {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.audit__button {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  background-color: #EFF7EA;
+  color: #262E1F;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.vertical-line {
+  width: 2px;
+  background-color: #EFF7EA;
+  height: auto;
+}
+
+#audit__block-content {
+  max-width: 500px;
+  width: 100%;
+  font-size: 15px;
+  color: #EFF7EA;
+  overflow: visible;
+}
+
+
+/* ====== АДАПТИВНОСТЬ ДО 650px ====== */
 @media screen and (max-width: 650px) {
   .audit__container {
-    display: block;
-    height: auto;
-    overflow: visible;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
     padding: 30px 15px;
+  }
+
+  #audit__block-selection,
+  #audit__block-content {
+    max-width: 100%;
   }
 
   .vertical-line {
     display: none;
   }
 
-  #audit__block-selection {
-    width: 100%;
-    margin: 0 auto;
-    position: static;
-    top: auto;
-    transform: none;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
   .audit__button {
-    width: 100%;
-    padding: 15px;
-    font-size: 16px;
-    height: auto;
+    font-size: 15px;
+    padding: 12px;
   }
 
   #audit__block-content {
-    position: static;
-    width: 100%;
-    height: auto !important;
-    overflow: visible !important;
-    top: auto;
-    transform: none;
-    padding: 20px 0;
     font-size: 14px;
-  }
-
-  .audit__block-content__large,
-  .audit__block-content__small {
-    height: auto !important;
-  }
-
-  html, body {
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: auto !important;
   }
 }
