@@ -965,14 +965,7 @@ header {
     }
 }
 
-@media screen and (max-width: 650px) {
-    .audit__container {
-        height: 1650px;
-
-        display: block;
-    }
-
-    .vertical-line {
+.vertical-line {
         display: none;
     }
 
@@ -1717,14 +1710,7 @@ footer {
     line-height: 1.4;
   }
 }
-@media screen and (max-width: 650px) {
-  .audit__container {
-    display: block;
-    height: auto;
-    padding: 30px 20px;
-  }
-
-  .vertical-line {
+.vertical-line {
     display: none;
   }
 
@@ -1758,33 +1744,12 @@ footer {
     position: static;
   }
 }
-@media screen and (max-width: 650px) {
-  #audit__block-content {
-    width: 100%;
-    max-width: 100%;
-    padding: 20px 0;
-    font-size: 14px;
-    top: auto;
-    transform: none;
-    position: static;
-    overflow: visible; /* 👈 позволяет контенту расширяться */
-    height: auto;       /* 👈 авто-высота под контент */
-  }
-
-  .audit__block-content__large,
+.audit__block-content__large,
   .audit__block-content__small {
     height: auto !important;  /* 👈 принудительно отменяем фикс высоту */
   }
 }
-@media screen and (max-width: 650px) {
-  .audit__container {
-    display: block;
-    height: auto;
-    overflow: visible;
-    padding: 30px 15px;
-  }
-
-  .vertical-line {
+.vertical-line {
     display: none;
   }
 
@@ -1815,6 +1780,60 @@ footer {
     transform: none;
     padding: 20px 0;
     font-size: 14px;
+  }
+
+  .audit__block-content__large,
+  .audit__block-content__small {
+    height: auto !important;
+  }
+
+  html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .audit__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+    gap: 30px;
+    height: auto;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  #audit__block-selection {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: static;
+    transform: none;
+  }
+
+  .audit__button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    height: auto;
+  }
+
+  #audit__block-content {
+    width: 100%;
+    max-width: 500px;
+    font-size: 14px;
+    padding: 0 10px;
+    position: static;
+    transform: none;
+    height: auto !important;
+    overflow: visible !important;
   }
 
   .audit__block-content__large,
